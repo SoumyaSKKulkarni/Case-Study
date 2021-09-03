@@ -1,0 +1,81 @@
+<html>
+	<head>
+		<script>
+			function validate()
+			{
+				var name=document.forms["f1"]["name"].value;
+				var t=document.forms["f1"]["typ"].value;
+				if(name=="")
+				{
+					alert("Enter valid username");
+					return false;
+				}
+				if(t=="")
+				{
+					alert("Enter valid password");
+					return false;
+				}
+				localStorage.setItem("pname",name);
+				localStorage.setItem("ptype",t);
+				return false;
+	
+			}
+		</script>
+		<style>
+		</style>
+	</head>
+	<style>
+		div.form{
+			display:block;
+			text-align:center;
+			
+		}
+		form{
+			display:inline-block;
+			
+			
+		}
+		input{
+			font-size:32px;
+		}
+		table{
+			border:3px solid black;
+			padding:20px;
+			cellpadding="20px;
+			
+		}
+		#b1{
+			font-size:35px:
+		}
+	</style>
+	<body style="text-align:center">
+	<br>
+	<br>
+	<br>
+		<div class="d1">
+			<form  name="f1" action="showPet.html" onsubmit= "return validate()" method="post">
+				<table style="font-size:32px">
+					<tr>
+						<th >Pet Name*
+							<input type="text" name="name" >
+						</th>
+					</tr>
+					<br>
+					<tr>
+						<th>pet Type*
+							<input  type="typ" name="typ">
+						</th>
+					</tr>
+					<br>
+					<tr>
+						<th>
+							<input type="submit" value="submit" id="b1" >
+						</th>
+					<tr>
+					<br>
+				</table>
+				
+			</form>
+		</div>
+	</body>
+</html>

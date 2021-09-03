@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<script>
+			function validate()
+			{
+				var name=document.forms["f1"]["name"].value;
+				var pw=document.forms["f1"]["pw"].value;
+				if(name=="")
+				{
+					alert("Enter valid username");
+					return false;
+				}
+				if(pw=="")
+				{
+					alert("Enter valid password");
+					return false;
+				}
+	
+			}
+		</script>
+		<style>
+		</style>
+	</head>
+	<style>
+		div.form{
+			display:block;
+			text-align:center;
+			
+		}
+		form{
+			display:inline-block;
+			
+			
+		}
+		input{
+			font-size:32px;
+		}
+		table{
+			border:3px solid black;
+			padding:20px;
+			cellpadding="20px;
+			
+		}
+		#b1{
+			font-size:35px:
+		}
+	</style>
+	<body style="text-align:center">
+	<br>
+	<br>
+	<br>
+		<div class="d1">
+			<form  name="f1" action="display.html" onsubmit= "return validate()" method="post">
+				<table style="font-size:32px">
+					<tr>
+						<th >Username*
+							<input type="text" name="name" >
+						</th>
+					</tr>
+					<br>
+					<tr>
+						<th>Password*
+							<input  type="password" name="pw">
+						</th>
+					</tr>
+					<br>
+					<tr>
+						<th>
+							<input type="submit" value="Login" id="b1" >
+						</th>
+					<tr>
+					<br>
+				</table>
+				
+			</form>
+		</div>
+	</body>
+</html>

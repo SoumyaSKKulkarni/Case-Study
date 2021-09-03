@@ -1,0 +1,21 @@
+<html>
+	<head>
+		<script>
+			var tbl=document.getElementById("t");
+			var row=tbl.insertRow();
+			var c1=row.insertCell();
+			var c2=row.insertCell();
+			c1.innerHTML=localStorage.getItem("pname");
+			c2.innerHTML=localStorage.getItem("ptype");
+			
+		</script>
+	</head>
+	<body>
+		<h2>Pet details</h2>
+		<table border=1 id="t">
+			<tr>
+				<td>Pet Name</td>
+				<td>Pet Type</td>
+			</tr>
+	</body>
+</html>
